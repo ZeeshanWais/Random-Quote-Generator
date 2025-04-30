@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quote-box"> 
+    <h2>Islamic Quotes Generator</h2>
+    <p id="quote">Click the button to see a quote</p>
+    <button id="myButton" onclick="generateQuote()">Get Quote</button>
+</div>
+
+    <script>
+        function generateQuote() {
+            const quotes = [
+               "Beshak, Allah sabr karne walon ke saath hai.",
+               "Aur tumhara Rab farmata hai, mujhe pukaro, main tumhari dua qubool karunga.",
+               "Beshaq har mushkil ke saath aasaani hai.",
+               " Aur jo Allah par bharosa karta hai, to Allah uske liye kaafi hai.",
+               " Beshak Allah har cheez par qudrat rakhta hai.",
+               "Aur Allah se madad maango aur sabar ke saath madad maango.",
+               "Allah jo chahta hai wahi hota hai.",
+               "Tum apne Rab ki kaun si ni'maton ko jhutlaoge?.",
+               "Jo log imaan laaye aur unhone apne imaan ko burai se bachaya, unke liye Allah ne behtar jazaa tay kiya.",
+               "Beshak Allah ke zikr mein dil ka sukoon hai.",
+               "Shukr karo, Allah tumhari shukr ko qubool karta hai.",
+               "Tawbah karo, Allah tumhari tawbah ko qubool karta hai.",
+               "Beshaq, Allah use maaf kar deta hai jo apni galatiyon ko sudharta hai.",
+               "Allah rehem karne wale hai.",
+               "Zindagi aur maut Allah ke haath me hai.",
+               "Imaan waalon ke liye Allah ke paas behtar jazaa hai."
+ 
+            ];
+            
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById("quote").innerText = quotes[randomIndex];
+            document.getElementById("myButton").innerHTML="Next"
+
+        }
+    </script>
+</body>
+</html>
